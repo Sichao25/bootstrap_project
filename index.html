@@ -86,14 +86,83 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <a role="button" class="btn btn-block nav-link btn-warning" 
-                    data-toggle="tooltip" data-html="true" title="Or Call Us at <br><strong>+852 1234567</strong>"
-                    data-placement="bottom"
-                    href="#reserveform">Reserve Table</a>
+                    <a role="button" class="btn btn-block btn-warning" data-toggle="modal" data-target="#reservemodal">Reserve a Table</a>
                 </div>
             </div>
         </div>
     </header>
+
+    <div class="modal fade" id="reservemodal" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Reserve a Table</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group row">
+                        <label for="NumOfGuests" class="col-md-4 col-form-label">Number of Guests</label>
+                        <div class="col-md-8">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="NumOfGuests" id="NumOfGuests1" value="1">
+                                <label class="form-check-label" for="NumOfGuests1">1</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="NumOfGuests" id="NumOfGuests2" value="2">
+                                <label class="form-check-label" for="NumOfGuests2">2</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="NumOfGuests" id="NumOfGuests3" value="3">
+                                <label class="form-check-label" for="NumOfGuests3">3</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="NumOfGuests" id="NumOfGuests4" value="4">
+                                <label class="form-check-label" for="NumOfGuests4">4</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="NumOfGuests" id="NumOfGuests5" value="5">
+                                <label class="form-check-label" for="NumOfGuests5">5</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="NumOfGuests" id="NumOfGuests6" value="6">
+                                <label class="form-check-label" for="NumOfGuests6">6</label>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="Section" class="col-12 col-md-4 col-form-label">Section</label>
+                        <div class="col-12 col-md-8">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-success active">
+                                  <input type="radio" name="smokingsection" id="nonsmoking" autocomplete="on" checked> Non-smoking
+                                </label>
+                                <label class="btn btn-danger">
+                                  <input type="radio" name="smokingsection" id="smoking" autocomplete="off"> Smoking
+                                </label>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="DateandTime" class="col-12 col-md-4 col-form-label">Date and Time</label>
+                        <div class="col-12 col-md-4">
+                            <input type="date" class="form-control" id="date" name="date" placeholder="Date">
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <input type="time" class="form-control" id="time" name="time" placeholder="Time">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">cancel</button>
+              <button type="button" class="btn btn-primary">Reserve</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <div class="container">
         <div class="row row-content">
@@ -221,6 +290,19 @@
                                       <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="NumOfGuests" id="NumOfGuests6" value="6">
                                         <label class="form-check-label" for="NumOfGuests6">6</label>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="Section" class="col-12 col-md-4 col-form-label">Section</label>
+                                <div class="col-12 col-md-8">
+                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn btn-success active">
+                                          <input type="radio" name="smokingsection" id="nonsmoking" autocomplete="on" checked> Non-smoking
+                                        </label>
+                                        <label class="btn btn-danger">
+                                          <input type="radio" name="smokingsection" id="smoking" autocomplete="off"> Smoking
+                                        </label>
                                       </div>
                                 </div>
                             </div>
