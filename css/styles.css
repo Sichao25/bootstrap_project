@@ -61,3 +61,7 @@ body{
     position: absolute;
     bottom: 0px;
 }
+
+.modal-header{
+    background-color: #9675cd
+}
