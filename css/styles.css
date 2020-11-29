@@ -9,14 +9,14 @@
     min-height: 400px;
 }
 .footer{
-    background-color: #D1C4E9;
+    background-color: #F98F4A;
     margin: 0px auto;
     padding: 20px 0px 20px 0px;
 }
 .jumbotron{
     padding: 70px 30px 70px 30px;
     margin: 0px auto;
-    background: #9675cd;
+    background: #F98F4A ;
     color: floralwhite;
 }
 address{
@@ -31,7 +31,7 @@ body{
 }
 
 .navbar-dark{
-    background-color: #512DA8;
+    background-color: #FF5733;
 }
 
 .tab-content{
@@ -42,7 +42,7 @@ body{
 }
 
 .carousel{
-    background-color: #512DA8;
+    background-color: #FF5733;
 }
 
 .carousel-item{
@@ -63,5 +63,5 @@ body{
 }
 
 .modal-header{
-    background-color: #9675cd
+    background-color: #F98F4A
 }
