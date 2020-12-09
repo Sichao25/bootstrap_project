@@ -1,7 +1,7 @@
 # bootstrap_project
 This is my first bootstrap project.
 
-##Screenshot
+##  Screenshot
 
 ![Image](1.jpg)
 ![Image](2.jpg)
